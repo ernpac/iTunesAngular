@@ -1,0 +1,23 @@
+﻿body {
+    padding-top: 70px;
+}
+.album
+{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 3px;
+    background-color: #4dc4f8;
+    border: solid 3px #808080;
+}
+
+.album a {
+    color: #fff;
+    font-size:16px;
+    font-weight: 500;
+}
+.album-inside {
+    margin:5px;
+    padding:8px;
+
+}

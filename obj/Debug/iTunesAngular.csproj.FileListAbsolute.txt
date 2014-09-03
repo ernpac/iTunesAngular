@@ -1,0 +1,14 @@
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\iTunesAngular.dll.config
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\iTunesAngular.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\iTunesAngular.pdb
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\Newtonsoft.Json.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Net.Http.Formatting.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Web.Http.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Web.Http.WebHost.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\Newtonsoft.Json.xml
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Net.Http.Formatting.xml
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Web.Http.xml
+E:\Work\Projects\iTunesAngular\iTunesAngular\bin\System.Web.Http.WebHost.xml
+E:\Work\Projects\iTunesAngular\iTunesAngular\obj\Debug\iTunesAngular.csprojResolveAssemblyReference.cache
+E:\Work\Projects\iTunesAngular\iTunesAngular\obj\Debug\iTunesAngular.dll
+E:\Work\Projects\iTunesAngular\iTunesAngular\obj\Debug\iTunesAngular.pdb

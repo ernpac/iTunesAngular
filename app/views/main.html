@@ -1,0 +1,18 @@
+﻿<div data-ng-show="ctrl.showError" class="alert alert-danger">{{ ctrl.error }}</div>
+<div>
+    <input type="text" class="input input-sm" data-ng-model="ctrl.model.searchTerm" /> <button class="btn btn-default" data-ng-click="ctrl.search()">Search</button>
+    <br /><br />
+
+    <div data-ng-repeat="album in ctrl.model.artistData | orderBy: 'releaseDate':true" class="col-lg-3 album" style="display: inline; min-height:210px;">
+        <div class="pull-left album-inside"><img src="{{ album.artworkUrl100}}" /></div>
+        <div class="album-inside"><a data-ng-href="{{ album.collectionViewUrl }}" target="_blank">{{ album.collectionName}}</a></div>
+        <div class="album-inside">Released: {{ album.releaseDate | date: 'shortDate' }}</div>
+        <div class="album-inside" style="clear:both;">
+
+            <div><a data-ng-click="ctrl.showRow(album)" href="">Tracks({{ album.trackCount }})</a></div>
+
+            <tracks-column album="{{ album.collectionId }}" data-ng-show="album.show"></tracks-column>
+        </div>
+    </div>
+
+</div>

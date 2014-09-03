@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!--js-->
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/underscore-min.js"></script>
+    <script src="Scripts/kendo/js/kendo.web.min.js"></script>
+    <script src="Scripts/angular-kendo.min.js"></script>
+
+    <!--styles-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/kendo/styles/kendo.default.min.css" rel="stylesheet" />
+    <link href="Scripts/kendo/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+
+    <!--this app-->
+    <script src="app/app.js"></script>
+    <script src="app/MainController.js"></script>
+</head>
+<body data-ng-app="app">
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">iTunes Angular</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="container-fluid" data-ng-view></div>
+</body>
+</html>
