@@ -11,18 +11,19 @@
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/underscore-min.js"></script>
-    <script src="Scripts/kendo/js/kendo.web.min.js"></script>
-    <script src="Scripts/angular-kendo.min.js"></script>
+    <script src="Scripts/kendoui/js/kendo.web.js"></script>
+    <script src="Scripts/angular-kendo.js"></script>
 
     <!--styles-->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Scripts/kendo/styles/kendo.default.min.css" rel="stylesheet" />
-    <link href="Scripts/kendo/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/kendoui/styles/kendo.common.css" rel="stylesheet" />
+    <link href="Scripts/kendoui/styles/kendo.default.css" rel="stylesheet" />
     <link href="Content/site.css" rel="stylesheet" />
 
     <!--this app-->
     <script src="app/app.js"></script>
     <script src="app/MainController.js"></script>
+    <script src="app/KendoController.js"></script>
 </head>
 <body data-ng-app="app">
     <div class="container-fluid">
@@ -42,8 +43,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="/">Music</a></li>
+                        <li><a href="/#grid">Scrubs</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

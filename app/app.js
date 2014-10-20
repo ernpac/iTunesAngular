@@ -2,12 +2,13 @@
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     .when('/', { templateUrl: '/app/views/main.html', controller: 'MainController', controllerAs: 'ctrl' })
+    .when('/grid', { templateUrl: '/app/views/grid.html', controller: 'KendoController', controllerAs: 'ctrl' })
     .otherwise({ redirectTo: '/' })
 }]);
 
 app.factory('dataService', function ($http) {
     function _search(searchTerm) {
-        var itunes = 'https://itunes.apple.com/search?term=ARTIST&entity=album';
+        var itunes = 'https://itunes.apple.com/search?term=ARTIST&entity=album&attribute=artistTerm';
 
         itunes = itunes.replace('ARTIST', searchTerm);
         return $http.jsonp(itunes, {
@@ -28,9 +29,20 @@ app.factory('dataService', function ($http) {
         });
     }
 
+    function _getTv() {
+        var itunes = 'https://itunes.apple.com/search?term=scrubs&media=tvShow&limit=200&entity=tvEpisode&attribute=tvSeasonTerm';//search?term=scrubs+season+2&media=tvShow';
+        return $http.jsonp(itunes, {
+            params: {
+                "callback": "JSON_CALLBACK",
+                "term": "scrubs"
+            }
+        });
+
+    }
     return {
         search: _search,
-        getTracks: _getTracks
+        getTracks: _getTracks,
+        getTv: _getTv
     }
 });
 
@@ -46,7 +58,6 @@ app.directive('tracksColumn', ['dataService', function (dataService, $compile) {
                     }
                 })
                 elem.append(builder);
-                //$compile(builder)(scope);
             });
     }
 

@@ -20,7 +20,7 @@
         }
         dataService.search(searchTerm).
         then(function (result) {
-            _this.model.artistData = result.data.results;
+            _this.model.artistData = _.sortBy(result.data.results, function(obj) { return obj.releaseDate });
             _this.showError = false;
         }, function (error, status) {
             _this.error = error.data.Message;
